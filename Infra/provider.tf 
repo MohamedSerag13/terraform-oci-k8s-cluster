@@ -1,0 +1,16 @@
+terraform {
+  backend "oci" {
+    namespace        = "axv88gr1jtkb"
+    bucket           = "terraform"
+    region           = "eu-paris-1"
+    auth             = "APIKey"
+    tenancy_ocid     = "ocid1.tenancy.oc1..aaaaaaaavxkericvs53x7uniahgxfdgvo5jlv5urzndzql6ih2252umuuyha"
+    user_ocid        = "ocid1.user.oc1..aaaaaaaarfdscjsvgfhduuugw3q7y4alqkk2z65mdnwrhypxcj7o65jsw2uq"
+    fingerprint      = "87:b2:fa:c4:02:b4:0b:a0:77:de:7f:e6:7b:98:0f:a9"
+    private_key_path = "/Users/mohamedserag/.oci/sessions/DEFAULT/oci_api_key.pem"
+  }
+}
+
+provider "oci" {
+  region = "eu-paris-1"
+}
